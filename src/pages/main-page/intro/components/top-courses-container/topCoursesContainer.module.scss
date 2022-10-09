@@ -1,0 +1,65 @@
+.container {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  justify-content: space-between;
+
+
+  .course_list {
+    width: 60%;
+  }
+
+  .courses_description {
+    width: 35%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title_description {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #7776BC;
+    }
+
+    .title {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      color: #141E32;
+    }
+
+    .description_text {
+      width: 100%;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #969696;
+    }
+
+    .goto_catalog {
+      width: 199.59px;
+      height: 48px;
+      background: #7776BC;
+      border-radius: 10px;
+      border-style: none;
+      margin-top: 30px;
+      cursor: pointer;
+
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      color: #FFFFFF;
+
+    }
+  }
+}

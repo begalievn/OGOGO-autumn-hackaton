@@ -1,0 +1,14 @@
+.container {
+  width: 68%;
+  height: 800px;
+  background: #fff;
+  display: grid;
+  justify-items: stretch;
+  align-items: start;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 3%;
+  grid-row-gap: 1%;
+  justify-content: flex-start;
+
+}

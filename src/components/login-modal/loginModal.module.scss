@@ -1,0 +1,153 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(154.9deg, #7776BC 13.55%, rgba(119, 118, 188, 0) 78.38%);
+  position: relative;
+
+  .logo {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+  }
+
+  .man {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%),
+  }
+
+  .close {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .close::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "\d7";
+    font-size: 35px;
+    color: black;
+    text-align: center;
+  }
+
+  .content {
+    width: 60%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 55px 0 0 55px;
+
+    .title {
+      width: 80%;
+      margin-bottom: 80px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 25px;
+      color: #1a1a1a;
+    }
+
+    .form_container {
+      width: 80%;
+      position: relative;
+
+      .input {
+        width: 90%;
+        height: 45px;
+        border-style: none;
+        border-bottom: solid 1px #ACACAC;
+        margin-bottom: 20px;
+        padding: 0px 5px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 24px;
+      }
+
+      .input::placeholder {
+        color: #ACACAC;
+      }
+
+      .input:focus {
+        outline: none;
+      }
+
+      .warn_message {
+        font-family: 'Inter';
+        color: red;
+        margin-bottom: 20px;
+      }
+
+      .password_eye_icon_register {
+        position: absolute;
+        top: 40%;
+        right: 55px;
+        cursor: pointer;
+      }
+
+      .radio_group {
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      .radios {
+        display: flex;
+        align-items: center;
+      }
+
+      .radio {
+        margin-right: 10px;
+        cursor: pointer;
+      }
+
+      .submit {
+        width: 90%;
+        height: 50px;
+        background: #7776BC;
+        border-radius: 20px;
+        border-style: none;
+        margin-top: 30px;
+        cursor: pointer;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+      }
+
+      .suggest_text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 25px;
+      }
+
+      .register_text {
+        color: #87CBAC;
+      }
+    }
+  }
+}

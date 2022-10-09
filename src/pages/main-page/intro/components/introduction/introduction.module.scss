@@ -1,0 +1,98 @@
+.container {
+  width: 100%;
+  height: 530px;
+  display: flex;
+  justify-content: space-around;
+
+  .left {
+    width: 50%;
+    height: 83%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+    .title {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 96px;
+      color: #141E32;
+
+      span {
+        color: #7776BC;
+      }
+    }
+
+    .paragraph {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: #969696;
+    }
+
+
+    .actions {
+      .buttons {
+        display: flex;
+
+        button {
+          width: 223px;
+          height: 48px;
+          border-style: none;
+          border-radius: 10px;
+          background: #7776BC;
+          margin-right: 25px;
+          cursor: pointer;
+
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 22px;
+          color: #FFFFFF;
+        }
+
+        .catalog_button {
+          width: 251px;
+          height: 48px;
+          display: flex;
+          align-items: center;
+          transition: all 1s;
+          cursor: pointer;
+
+          img {
+            margin-right: 10px;
+          }
+
+          p {
+            margin: 0;
+          }
+
+        }
+
+        .catalog_button:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+      width: 560px;
+      height: 560px;
+    }
+  }
+}

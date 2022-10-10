@@ -1,0 +1,134 @@
+.container {
+  width: 100%;
+
+  .main_title {
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #141E32;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .description {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 34px;
+    color: #141E32;
+  }
+
+  .second {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .h2 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        color: #0A21C6;
+        margin-bottom: 20px;
+      }
+
+      .h3 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 43px;
+        text-align: center;
+        color: #141E32;
+        margin-bottom: 50px;
+      }
+
+      .text2 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px;
+        text-align: center;
+
+        color: #141E32;
+        margin-bottom: 39px;
+      }
+
+      .find_courses {
+        width: 305px;
+        height: 83px;
+        border-style: none;
+        background: #7776BC;
+        border-radius: 10px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  .third {
+    width: 100%;
+    display: flex;
+    margin-bottom: 60px;
+
+    .left {
+
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .text1 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        text-align: center;
+
+        color: #000000;
+        margin-bottom: 70px;
+      }
+
+      .add_course {
+        width: 408px;
+        height: 89px;
+        background: #7776BC;
+        border-radius: 10px;
+        border-style: none;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        color: #FFFFFF;
+      }
+    }
+  }
+}

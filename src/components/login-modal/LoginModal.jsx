@@ -3,9 +3,10 @@ import React from 'react';
 import {Box, Modal} from "@mui/material";
 import {useDispatch, useSelector} from "react-redux";
 import {useForm} from "react-hook-form";
+import jwt from 'jwt-decode';
 
 // redux
-import { closeLoginModal, openRegisterModal } from "../../store/features/auth/authSlice";
+import { closeLoginModal, openRegisterModal, setUser } from "../../store/features/auth/authSlice";
 
 // api
 import { login } from "../../api/auth-api";
@@ -20,9 +21,16 @@ import classes from './loginModal.module.scss';
 const LoginModal = () => {
     const dispatch = useDispatch();
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => {
+    const onSubmit = async (data) => {
         console.log("data", data);
-        login(data);
+        const result = await login(data);
+        const decoded = jwt(result.data.access);
+        dispatch(setUser(decoded.username));
+        console.log(decoded.username);
+        console.log("result", result.data.access);
+        if(decoded.username) {
+            dispatch(closeLoginModal());
+        }
     };
     
     const isLoginModalOpen = useSelector(state => state.auth.isLoginModalOpen);
@@ -77,7 +85,7 @@ const LoginModal = () => {
                                     {errors.exampleRequired && <span className={classes.warn_message}>Поля объязательны к заполнению</span>}
                                     
                                     <button className={classes.submit} type="submit">
-                                        Создать аккаунт
+                                        Войти
                                     </button>
                                     <p>Нет аккаунта? <span className={classes.register_text} onClick={handleRegisterClick}>Зарегистрироваться</span></p>
                                 </form>

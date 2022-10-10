@@ -61,6 +61,12 @@
     height: 55px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+
+    .user {
+      position: absolute;
+      right: 0;
+    }
 
     .login {
       width: 121px;

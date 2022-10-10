@@ -8,6 +8,8 @@ import twitter from './twitter.svg';
 import linkedin from './linkedin.svg';
 import instagram from './instagram.svg';
 import star from './star.svg';
+import greenStar from './greenStar.svg';
+import basketIcon from './basketIcon.svg';
 
 export {
     mainLogo,
@@ -19,5 +21,7 @@ export {
     twitter,
     linkedin,
     instagram,
-    star
+    star,
+    greenStar,
+    basketIcon
 }

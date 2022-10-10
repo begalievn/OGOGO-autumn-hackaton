@@ -1,7 +1,7 @@
 // modules
 import React, {useEffect, useState} from 'react';
 import {useLocation, useNavigate} from "react-router-dom";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
 // constants
 import { navOptions } from "../../utils/constants/header-constants";
@@ -22,6 +22,9 @@ const Header = () => {
     const [activeOption, setActiveOption] = useState("/");
     const navigate = useNavigate();
     const location = useLocation();
+    const user = useSelector((state) => state.auth.user);
+    
+    console.log("user in Header", user);
     
     useEffect(() => {
         let route = location.pathname.split('/')[1] || "/";
@@ -57,13 +60,26 @@ const Header = () => {
                 }
             </div>
             <div className={classes.auth}>
-                <div className={classes.login} onClick={handleLoginClick}>
-                    <img src={greenUserIcon} alt={"userAuth"} />
-                    <p>Войти</p>
-                </div>
-                <div className={classes.register} onClick={handleRegisterClick}>
-                    <p>Регистрация</p>
-                </div>
+                {
+                    user ? (
+                        <div className={[classes.login, classes.user].join(" ")} onClick={handleLoginClick}>
+                            <img src={greenUserIcon} alt={"userAuth"} />
+                            <p>{ user }</p>
+                        </div>
+                    ) : (
+                        <>
+                            <div className={classes.login} onClick={handleLoginClick}>
+                                <img src={greenUserIcon} alt={"userAuth"} />
+                                <p>Войти</p>
+                            </div>
+                            <div className={classes.register} onClick={handleRegisterClick}>
+                                <p>Регистрация</p>
+                            </div>
+                        </>
+                    )
+                }
+               
+                
             </div>
         </div>
     );

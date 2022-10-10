@@ -1,4 +1,141 @@
 .container {
   width: 100%;
   display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+
+  .about_product {
+    width: 40%;
+
+    .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+
+      .main_title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        color: #141E32;
+        margin-right: 15px;
+      }
+
+      .company_name {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #969696;
+      }
+    }
+
+    .description {
+      .description_text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #141E32;
+      }
+
+      .address {
+        margin-top: 8px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .price {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 39px;
+      color: #141E32;
+      margin-bottom: 14px;
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+
+      .rating_text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin-right: 15px;
+      }
+
+      .stars {
+        margin-right: 15px;
+      }
+
+      .rating_quantity {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+      }
+    }
+
+    .register {
+      margin-top: 20px;
+
+      .register_button {
+        width: 300px;
+        height: 70px;
+        background: #7776BC;
+        border-style: none;
+        border-radius: 10px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+
+
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  .product_right {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .product_image {
+      width: 450px;
+      height: 300px;
+      margin-bottom: 20px;
+    }
+
+    .vacancy_button {
+      width: 550px;
+      height: 70px;
+      background: #87CBAC;
+      border-radius: 10px;
+      border-style: none;
+
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      color: #FFFFFF;
+
+    }
+  }
 }

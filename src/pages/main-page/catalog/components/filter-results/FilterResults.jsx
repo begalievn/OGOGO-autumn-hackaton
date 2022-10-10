@@ -4,19 +4,21 @@ import React from 'react';
 // styles
 import classes from './filterResults.module.scss';
 import ProductCard from "../../../../../components/product-card/ProductCard";
+import {Pagination} from "@mui/material";
 
 
-const FilterResults = () => {
+const FilterResults = ({ courses }) => {
     return (
-        <div className={classes.container}>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-
-        </div>
+            <div className={classes.container}>
+                {
+                    courses.map((item, index) => (
+                        <div key={index}>
+                            <ProductCard data={item} />
+                        </div>
+                    ))
+                }
+            </div>
+        
     );
 };
 

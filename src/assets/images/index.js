@@ -7,6 +7,10 @@ import bg3 from './bg3.png';
 import bg4 from './bg4.png';
 import bg5 from './bg5.png';
 import bg6 from './bg6.png';
+import map from './map.png';
+import imageIn from './imagIn.png';
+import aboutImage2 from './aboutImage2.png';
+import ogogoImage from './ogogoImage.png';
 
 
 
@@ -20,6 +24,10 @@ export {
     bg3,
     bg4,
     bg5,
-    bg6
+    bg6,
+    map,
+    imageIn,
+    aboutImage2,
+    ogogoImage
 }
 

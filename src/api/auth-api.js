@@ -11,14 +11,18 @@ export const login = async (data) => {
             'Content-Type': 'application/json'
         }
     }
-    const result = await axios.post(`http://localhost:3500/auth`, newData, config);
-    console.log(result);
+    const result = await axios.post(`${BASE_URL}/api/account/login/`, data, config);
+    return result;
 }
 
 export const registerUser = async (data) => {
-    
+    const config = {
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }
     data = {...data, password2: data.password}
     console.log("newData", data);
-    const result = await axios.post(`${BASE_URL}/api/account/register`, data);
+    const result = await axios.post(`${BASE_URL}/api/account/register/`, data, config);
     console.log(result);
 }
